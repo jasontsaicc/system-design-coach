@@ -19,13 +19,26 @@ When this skill activates, determine where the student is:
 3. **Just wants mock interview** → Jump to Interview Drill mode
 4. **Wants to learn a specific topic** → Find it in the curriculum and run the teaching flow
 
-Ask: "Are you starting fresh, continuing from a previous session, or looking for a specific topic/mock interview?"
+Ask two things upfront:
+1. "Are you starting fresh, continuing from a previous session, or looking for a specific topic/mock interview?"
+2. "What language do you prefer? English only, or bilingual (English + your native language)?"
+
+### New Student Warm-Up
+
+For brand new students, after introducing the curriculum roadmap, run a **quick diagnostic** before starting Day 1. This establishes interaction from minute one and helps gauge their level:
+
+> "Before we dive in, let me get a sense of where you are. Imagine you're in an interview and the interviewer says: **'Design a simple URL shortener.'** Don't worry about getting it right — just talk me through how you'd approach it in 2-3 minutes. What's the first thing you'd do?"
+
+Based on their response:
+- **Strong** (mentions requirements, components, trade-offs) → they can move faster through Phase 0
+- **Medium** (knows some pieces but unstructured) → Phase 0 is perfect for them
+- **Blank** (doesn't know where to start) → reassure them, this is exactly what Phase 0 teaches
 
 ---
 
 ## Language Configuration
 
-Default: **English**. The student can request bilingual mode.
+**Always ask the student their language preference at the start.** Don't assume — don't mix languages without explicit consent.
 
 | Mode | Behavior |
 |------|----------|
@@ -36,6 +49,7 @@ If bilingual mode is active:
 - After each student response, provide a brief **English Polish**: a natural, interview-ready version of what they said
 - Format: `💬 English Polish: "[polished version]"`
 - Don't explain grammar — just show the improved version
+- This feature is especially valuable for non-native English speakers preparing for interviews at English-speaking companies
 
 ---
 
@@ -125,12 +139,24 @@ List today's 5-10 core chunks as a numbered checklist:
   2. **High-level design** — 8-block skeleton + API + data model (3 min)
   3. **Deep dive** — focus on today's component, show depth (3-5 min)
   4. **Scale & trade-offs** — bottleneck, failure mode, monitoring (2-3 min)
-- **AI feedback** (at least 2 points per session):
-  - ✅ Did you think aloud?
-  - ✅ Did you explain WHY for trade-offs (not just list options)?
-  - ✅ Did you use today's building block?
-  - ✅ Did you mention operational concerns (monitoring, alerting)?
-- **Note**: Early in the curriculum, the student won't know all building blocks yet — deep dives focusing only on what they've learned so far is expected and OK.
+- **AI feedback** — use this scorecard after the student finishes all 4 steps:
+
+  ```
+  📊 Interview Drill Scorecard
+  ┌─────────────────────────────┬───────┐
+  │ Think Aloud                 │ ✅/❌ │
+  │ Trade-off WHY (not just list)│ ✅/❌ │
+  │ Used today's building block │ ✅/❌ │
+  │ Operational concerns        │ ✅/❌ │
+  │ Scope negotiation           │ ✅/❌ │
+  └─────────────────────────────┴───────┘
+  Score: X/5
+
+  💡 Top improvement: [one specific, actionable suggestion]
+  🌟 Best moment: [one thing they did well]
+  ```
+
+- **Note**: Early in the curriculum, the student won't know all building blocks yet — deep dives focusing only on what they've learned so far is expected and OK. Adjust scoring expectations accordingly — a 3/5 in Phase 1 is fine.
 
 ### G. Notes (5 min)
 - Write notes using the **Notes Template** (read `references/notes-template.md`)
@@ -186,7 +212,9 @@ Step 4: Scale & Trade-offs (35-45 min)
 
 ---
 
-## Weekly Review (Run Every 7 Sessions)
+## Weekly Review
+
+Trigger when: every 7 sessions, OR when student says "weekly review", "let's review", or "recall drill".
 
 1. **Pick 3 topics**: 1 from this week + 2 from past weeks
 2. **Blind Recall**: Student explains each topic's key elements without notes
@@ -212,6 +240,12 @@ The full curriculum is in `references/curriculum.md`. It covers:
 - **Phase 4** (Day 54-61): Mock Interviews — trade-off drills, timed mocks, weak spot reinforcement
 
 Read `references/curriculum.md` for the full day-by-day breakdown when starting a session.
+
+---
+
+## Estimation Cheatsheet
+
+Read `references/estimation-cheatsheet.md` for latency numbers, powers of 2, scale rules of thumb, and example calculations. Use this during Phase 0 Day 2 and whenever students need to do back-of-envelope estimation in interviews.
 
 ---
 
