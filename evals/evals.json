@@ -1,0 +1,20 @@
+{
+  "skill_name": "sd-coach",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to start preparing for system design interviews. I have about 60 days and I'm a backend engineer with 3 years of experience. Where should I start?",
+      "expected_output": "Should introduce the curriculum, start from Phase 0, run Step A (skip review) and Step B (intro with analogy), begin Step C with chunk map for Day 1 topic"
+    },
+    {
+      "id": 2,
+      "prompt": "I just finished learning about caching and CDN (Day 6-7). Let's continue to the next topic - Database Selection.",
+      "expected_output": "Should run the full teaching flow: Step A (review caching), Step B (intro databases with analogy), Step C (chunk map with 5-10 database chunks, Feynman gates), and continue through the session"
+    },
+    {
+      "id": 3,
+      "prompt": "Give me a mock SD interview question. I've learned about load balancing, caching, and CDN so far. I want to practice the 4-step framework.",
+      "expected_output": "Should jump to Interview Drill mode (Step F), give a mini SD problem focused on learned topics, let student run 4-step framework, provide structured feedback"
+    }
+  ]
+}

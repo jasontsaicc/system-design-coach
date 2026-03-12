@@ -1,0 +1,78 @@
+# System Design Coach
+
+A Claude Code skill that transforms Claude into a structured System Design interview coach, using **Feynman Method** (deep understanding) + **Simon Method** (mastery through chunking).
+
+## What It Does
+
+- **61-day structured curriculum** covering core building blocks, distributed systems, and classic SD problems
+- **Interactive teaching** — never lectures; asks you to explain concepts in your own words
+- **Daily mock interviews** — practice the 4-step SD framework with AI feedback
+- **Hands-on PoCs** — build proof-of-concept projects, not just memorize
+- **Progress tracking** — weekly reviews with blind recall and gap analysis
+
+## Teaching Flow (Every Session)
+
+```
+A. [5 min]   Review — Check yesterday's notes + mistakes
+B. [3 min]   Introduction — Real-life analogy, build intuition
+C. [12 min]  Core Teaching — Chunk map → Teach → Feynman Gate (explain back)
+D. [20 min]  Hands-On — PoC or design exercise
+E. [5 min]   Simon Drill — Self recall + AI challenge
+F. [10-15 min] Interview Drill — Mini SD mock with 4-step framework
+G. [5 min]   Notes — Structured template with mistake tracking
+H. [5 min]   Progress Update
+    Total ≈ 65-70 min
+```
+
+## Curriculum Overview
+
+| Phase | Days | Focus |
+|-------|------|-------|
+| Phase 0 | 1-3 | Thinking Framework — interview rubric, estimation, 4-step method |
+| Phase 1 | 4-16 | Core Building Blocks — LB, caching, databases, queues, API, auth |
+| Phase 2 | 17-26 | Distributed Systems — CAP, consistency, replication, rate limiting |
+| Phase 3 | 27-53 | Classic SD Problems — URL shortener, chat, news feed, payment, etc. |
+| Phase 4 | 54-61 | Mock Interviews — timed mocks, trade-off drills, weak spot reinforcement |
+
+## Install
+
+```bash
+claude install github:jasontsaicc/system-design-coach
+```
+
+## Key Features
+
+### Feynman Method
+Never asks "Do you understand?" — instead asks "Can you explain X in your own words?" If wrong, guides you to find the error rather than correcting directly.
+
+### Simon Method (Chunking)
+Every topic decomposed into 5-10 core chunks. Each chunk must pass the "explain in own words" test before moving on. No skipping — drill until breakthrough.
+
+### 4-Step Interview Framework
+Every design answer follows: Clarify Requirements → High-Level Design → Deep Dive → Scale & Trade-offs. Practiced daily to build muscle memory.
+
+### Observability Mindset
+Every building block includes SLIs, SLO targets, alerts, and dashboard definitions — training you to naturally weave monitoring into SD answers.
+
+## Language Support
+
+- **Default**: English
+- **Bilingual mode**: English + student's native language for Feynman-style plain explanations
+- Includes **English Polish** feature for non-native speakers practicing interview articulation
+
+## Project Structure
+
+```
+system-design-coach/
+├── SKILL.md              # Core skill — teaching methods + session flow
+├── references/
+│   ├── curriculum.md      # Full 61-day curriculum
+│   ├── notes-template.md  # Standardized notes format
+│   └── 8-block-skeleton.md # Whiteboard diagram template
+└── evals/
+    └── evals.json         # Test cases for skill validation
+```
+
+## License
+
+MIT
