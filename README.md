@@ -36,33 +36,38 @@ H. [5 min]   Progress Update
 
 ## Install
 
-### Option 1: Personal Skill (available in all your projects)
+### Quick Install (recommended)
 
 ```bash
-# Clone the repo
-git clone https://github.com/jasontsaicc/system-design-coach.git
+npx skills add jasontsaicc/system-design-coach
+```
 
-# Copy to your Claude Code skills directory
+Works with Claude Code, Cursor, Copilot, and [40+ other agents](https://github.com/vercel-labs/skills). No extra setup needed.
+
+### Manual Install
+
+**Personal skill** (available in all your projects):
+
+```bash
+git clone https://github.com/jasontsaicc/system-design-coach.git
 cp -r system-design-coach ~/.claude/skills/sd-coach
 ```
 
-### Option 2: Project Skill (available in one project only)
+**Project skill** (one project only):
 
 ```bash
-# Inside your project directory
 mkdir -p .claude/skills
 git clone https://github.com/jasontsaicc/system-design-coach.git .claude/skills/sd-coach
 ```
 
-### Option 3: Use with `--add-dir`
+**Temporary use** (no install):
 
 ```bash
-# Clone anywhere, then point Claude Code to it
 git clone https://github.com/jasontsaicc/system-design-coach.git ~/sd-coach
 claude --add-dir ~/sd-coach
 ```
 
-### Verify Installation
+### Verify
 
 In Claude Code, type:
 ```
