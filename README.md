@@ -36,9 +36,39 @@ H. [5 min]   Progress Update
 
 ## Install
 
+### Option 1: Personal Skill (available in all your projects)
+
 ```bash
-claude install github:jasontsaicc/system-design-coach
+# Clone the repo
+git clone https://github.com/jasontsaicc/system-design-coach.git
+
+# Copy to your Claude Code skills directory
+cp -r system-design-coach ~/.claude/skills/sd-coach
 ```
+
+### Option 2: Project Skill (available in one project only)
+
+```bash
+# Inside your project directory
+mkdir -p .claude/skills
+git clone https://github.com/jasontsaicc/system-design-coach.git .claude/skills/sd-coach
+```
+
+### Option 3: Use with `--add-dir`
+
+```bash
+# Clone anywhere, then point Claude Code to it
+git clone https://github.com/jasontsaicc/system-design-coach.git ~/sd-coach
+claude --add-dir ~/sd-coach
+```
+
+### Verify Installation
+
+In Claude Code, type:
+```
+What skills are available?
+```
+You should see `sd-coach` in the list. You can also invoke it directly with `/sd-coach`.
 
 ## Key Features
 
