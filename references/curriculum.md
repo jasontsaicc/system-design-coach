@@ -442,7 +442,7 @@ Video Streaming, Cloud Storage, Distributed Task Scheduler, Ticket/Booking Syste
 - 45-minute interview, double trap drills — chaining pivots without losing composure
 
 ### Phase 4 Gate
-> Self-assessment: Score ≥ 5/7 on both final mocks. Ready for real interviews.
+> 45-minute final mock (Day 60 or 61). Scorecard ≥ 5/7 on both final mocks.
 
 ---
 

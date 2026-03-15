@@ -256,6 +256,7 @@ List today's 5-10 core chunks as a numbered checklist:
 ☐ 5. [Real-world usage]
 ...
 ```
+For Phase 1+ topics: always include an **Observability Mini** chunk (SLIs, SLO target, Alerts, Dashboards) — see [Observability Mini](#observability-mini-apply-to-every-phase-1-topic).
 
 **Step 2 — Teach each chunk:**
 - Explain in plain language — assume beginner level
@@ -332,7 +333,7 @@ This creates a mental bridge between sessions and trains the student to anticipa
   4. Add one-liner to **One-Liner Library**
   5. Increment **Session count**
   6. Clear **Current Session (Breakpoint)** section (session completed normally)
-  7. Check if `session_count - last_weekly_review_session >= 7` → if yes, flag next session as Weekly Review
+  7. Check if `session_count - last_weekly_review >= 7` → if yes, flag next session as Weekly Review
 - Preview tomorrow's topic for mental warm-up
 - If student needs to leave mid-session at ANY step: update the **Current Session (Breakpoint)** section with current position before ending
 
@@ -430,7 +431,7 @@ ASCII architecture diagram + trace a request through the system.
 
 ### Trigger
 
-Automatically triggered when Step A detects `session_count - last_weekly_review_session >= 7` in `progress.md`.
+Automatically triggered when Step A detects `session_count - last_weekly_review >= 7` in `progress.md`.
 Also triggered when student says "weekly review", "let's review", or "recall drill".
 
 When triggered, **replace the normal session** with the Weekly Review flow.

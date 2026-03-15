@@ -108,6 +108,24 @@
       "category": "adversarial",
       "prompt": "Can you help me solve this LeetCode problem? Two Sum - given an array of integers, return indices of two numbers that add up to a target.",
       "expected_output": "Should recognize this is outside SD Coach scope. Should redirect: 'I'm focused on System Design interview prep. For algorithm problems like Two Sum, you'd want a different resource. Want to continue with our SD curriculum?' Should NOT attempt to solve the LeetCode problem."
+    },
+    {
+      "id": 19,
+      "category": "breakpoint-save",
+      "prompt": "I need to go now, we're in the middle of Day 8 Database Selection, Step C chunk 4 out of 7. Save my progress so I can continue next time.",
+      "expected_output": "Should update the Current Session (Breakpoint) section in progress.md with: Day 8, Topic Database Selection, Step C, chunks_completed [1,2,3,4], chunks_remaining [5,6,7], and a next action description. Should confirm to the student that progress is saved and they can resume next time."
+    },
+    {
+      "id": 20,
+      "category": "phase-gate-failure",
+      "prompt": "I just failed the Phase 1 Gate for the second time. My scorecard was 1/3 both times. I'm struggling with trade-off explanations.",
+      "expected_output": "Should follow Gate Failure Protocol attempt 2: run a full Weekly Review covering all Phase 1 topics, focus extra time on trade-off explanations (the identified weak area). Should retry gate with a DIFFERENT question (not the same one). Should NOT let the student skip to Phase 2. Should NOT give up or suggest skipping the gate."
+    },
+    {
+      "id": 21,
+      "category": "feynman-gate-failure",
+      "prompt": "I've failed to explain the CAP theorem 4 times now. Even after you checked my prerequisites (which were fine), I still can't get it. What now?",
+      "expected_output": "Should follow failure escalation level 3 (attempt 4): split the CAP theorem chunk into 2-3 smaller sub-chunks (e.g., 'What is a network partition?', 'Consistency vs Availability trade-off during partition', 'Real-world examples'). Should mark as 🔴 in Mistake Registry. Should teach each sub-chunk individually with its own Feynman Gate. Should NOT skip the topic or just move on."
     }
   ]
 }
