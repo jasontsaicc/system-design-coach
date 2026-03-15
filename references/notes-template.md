@@ -45,3 +45,30 @@ Rules:
 - "What I Thought" must contain the actual wrong understanding, not be blank
 - If genuinely no mistakes → write "No mistakes this session" (this should be rare)
 - This section is the priority target for review sessions
+
+## 🎤 How to Say It in Interview
+
+> Practice articulating today's topic as if you're in a real interview.
+
+**Opening (30 sec):**
+> "In one sentence, [topic] is... The key trade-off is... I'd approach this by..."
+
+**When asked to go deeper:**
+> Q: "[likely follow-up question]"
+> A: "[structured answer with trade-off reasoning]"
+
+**Showing production depth:**
+> "In production, I'd monitor [specific metrics] and watch for [specific failure mode]..."
+
+Rules:
+- Write in YOUR words, not textbook definitions
+- Must include at least one trade-off with reasoning
+- Must include at least one operational/production concern
+- This section feeds directly into interview muscle memory
+
+## Sync to Progress File
+
+After writing notes:
+1. Add any new 🔴 Mistakes to the Mistake Registry in `progress.md`
+2. Add this topic's one-liner to the One-Liner Library in `progress.md`
+3. Update Topic Mastery level based on session performance

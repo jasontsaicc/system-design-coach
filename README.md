@@ -12,17 +12,9 @@ A Claude Code skill that transforms Claude into a structured System Design inter
 
 ## Teaching Flow (Every Session)
 
-```
-A. [5 min]   Review — Check yesterday's notes + mistakes
-B. [3 min]   Introduction — Real-life analogy, build intuition
-C. [12 min]  Core Teaching — Chunk map → Teach → Feynman Gate (explain back)
-D. [20 min]  Hands-On — PoC or design exercise
-E. [5 min]   Simon Drill — Self recall + AI challenge
-F. [10-15 min] Interview Drill — Mini SD mock with 4-step framework
-G. [5 min]   Notes — Structured template with mistake tracking
-H. [5 min]   Progress Update
-    Total ≈ 65-70 min
-```
+Each session follows an 8-step flow (A→H) taking ~65-70 minutes of learning content. Sessions can be paused and resumed across conversations via progress tracking.
+
+See `SKILL.md` for the complete teaching flow.
 
 ## Curriculum Overview
 
@@ -99,13 +91,15 @@ Every building block includes SLIs, SLO targets, alerts, and dashboard definitio
 
 ```
 system-design-coach/
-├── SKILL.md              # Core skill — teaching methods + session flow
+├── SKILL.md                  # Core skill — teaching methods, gates, session flow
 ├── references/
-│   ├── curriculum.md      # Full 61-day curriculum
-│   ├── notes-template.md  # Standardized notes format
-│   └── 8-block-skeleton.md # Whiteboard diagram template
+│   ├── curriculum.md          # Full 61-day curriculum with prerequisites
+│   ├── progress-template.md   # Student progress tracking format
+│   ├── notes-template.md      # Standardized notes format + interview template
+│   ├── 8-block-skeleton.md    # Whiteboard diagram template
+│   └── estimation-cheatsheet.md # Back-of-envelope numbers
 └── evals/
-    └── evals.json         # Test cases for skill validation
+    └── evals.json             # 18 test cases for skill validation
 ```
 
 ## License
