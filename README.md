@@ -1,3 +1,9 @@
+> **⚠️ ARCHIVED (2026-07-10).** This coach moved into the
+> [`learning-coaches`](https://github.com/jasontsaicc/learning-coaches) monorepo as
+> `skills/sd-coach/`, rebuilt on the shared teaching engine. Full history was merged
+> there via git subtree (`legacy/sd/coach/`); this repo's final standalone state is
+> tagged `pre-migration`. Do not update this repo.
+
 **[English](README.md)** | **[繁體中文](README.zh-TW.md)**
 
 ```
